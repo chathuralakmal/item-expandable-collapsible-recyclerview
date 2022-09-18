@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Beer App Demo</string>
+
+    <string name="abv">abv: %.1f</string>
+    <string name="title_activity_filter">Filters</string>
+
+    <!-- Filter Titles -->
+    <string name="abv_title">ABV</string>
+    <string name="ibu_title">IBU</string>
+    <string name="ebc_title">EBC</string>
+    <string name="yeast">Yeast Name</string>
+
+    <string name="brewed">Brewed</string>
+    <string name="brewed_before">Before</string>
+    <string name="brewed_after">After</string>
+    <string name="hops">Hops</string>
+    <string name="malt">Malt</string>
+    <string name="food">Food</string>
+    <string name="ids">Ids</string>
+    <string name="ids_placeholder">Ex: 22|34</string>
+
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+
+    <string name="reset">Reset</string>
+    <string name="apply">Apply</string>
+
+    <string name="filter">Filters</string>
+
+
+    <string name="description">Description: </string>
+    <string name="food_pairing">Food Pairing: </string>
+
+    <string name="no_results">No Results Found!</string>
+    <string name="alert">Alert!</string>
+
+</resources>

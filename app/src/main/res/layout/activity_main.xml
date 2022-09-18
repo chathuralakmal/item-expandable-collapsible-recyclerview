@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="@color/brown_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginHorizontal="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/layout_bg"
+            android:id="@+id/view_search"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:paddingStart="5dp"
+                android:src="@mipmap/search_icon"
+                android:id="@+id/beer_image"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                app:tint="@color/grey" />
+
+            <EditText
+                android:background="@android:color/transparent"
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                tools:text="" />
+        </LinearLayout>
+
+        <Button
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:id="@+id/btn_filter"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/filter"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/empty_result_view"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:paddingStart="5dp"
+            android:src="@drawable/beer"
+            android:id="@+id/empty_search_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            app:tint="@color/grey" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/no_results"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
